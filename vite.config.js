@@ -3,5 +3,8 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/Millineum-Book-Store/'
+  base: '/Millineum-Book-Store/',
+  build: {
+    outDir: 'docs'
+  }
 })
