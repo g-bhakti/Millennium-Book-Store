@@ -1,4 +1,5 @@
 function Shop() {
+
   return (
 
     <div className="products">
@@ -8,6 +9,7 @@ function Shop() {
       <div className="product-container">
 
         <div className="product-card">
+
           <img
             src="https://via.placeholder.com/200"
             alt="Notebook"
@@ -18,19 +20,7 @@ function Shop() {
           <p>₹120</p>
 
           <button>Buy Now</button>
-        </div>
 
-        <div className="product-card">
-          <img
-            src="https://via.placeholder.com/200"
-            alt="Pen"
-          />
-
-          <h3>Blue Pen</h3>
-
-          <p>₹20</p>
-
-          <button>Buy Now</button>
         </div>
 
       </div>

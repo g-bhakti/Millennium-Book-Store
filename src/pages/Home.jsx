@@ -1,16 +1,50 @@
-function Home() {
+import books from "../assets/banner.jpeg";
+
+function Home( { setOpenModal }) {
+
   return (
-    <div className="hero">
 
-      <h1>Welcome To BookStore</h1>
+    <div className="home-page">
 
-      <p>
-        Books, Pens, Notebooks & Stationery Items
-      </p>
+      <section className="hero-section">
 
-      <button>Shop Now</button>
+        {/* LEFT SIDE TEXT */}
+
+        <div className="hero-text">
+
+          <h1>
+            Welcome To Millennium Book Store
+          </h1>
+
+          <p>
+            All School & College Books, Xerox, Printout,
+            Spiral Binding, Lamination & Stationery Available Here.
+          </p>
+
+          <button
+            className="visit-shop-btn"
+            onClick={() => setOpenModal(true)}
+          >
+            Visit Shop
+          </button>
+
+        </div>
+
+        {/* RIGHT SIDE IMAGE */}
+
+        <div className="right-image">
+
+          <img
+            src={books}
+            alt="Millennium Book Store"
+          />
+
+        </div>
+
+      </section>
 
     </div>
+
   );
 }
 

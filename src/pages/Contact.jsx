@@ -1,9 +1,10 @@
 function Contact() {
+
   return (
 
     <div className="contact">
 
-      <h1>Contact Us</h1>
+      <h2>Contact Us</h2>
 
       <p>Email: bookstore@gmail.com</p>
 
