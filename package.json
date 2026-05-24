@@ -1,9 +1,9 @@
 {
-  "name": "Millineum-Book-Store",
+  "name": "Millennium-Book-Store",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://g-bhakti.github.io/Millineum-Book-Store",
+  "homepage": "https://g-bhakti.github.io/Millennium-Book-Store",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
