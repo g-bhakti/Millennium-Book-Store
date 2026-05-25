@@ -460,3 +460,312 @@ body,
     height:auto;
   }
 }
+
+/* ====================================
+   CONTACT PAGE FULL RESPONSIVE CSS
+==================================== */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html,
+body{
+  width:100%;
+  overflow-x:hidden;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#f4f4f4;
+}
+
+/* ====================================
+   MAIN CONTAINER
+==================================== */
+
+.contact-page{
+  width:100%;
+  min-height:100vh;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  gap:40px;
+
+  padding:30px 50px;
+
+  background:#f4f4f4;
+}
+
+/* ====================================
+   LEFT SIDE
+==================================== */
+
+.contact-left{
+  flex:1;
+  width:100%;
+}
+
+/* TITLE */
+
+.contact-left h1{
+  font-size:65px;
+  font-weight:700;
+  color:#111;
+
+  margin-bottom:30px;
+  line-height:1.1;
+}
+
+/* ====================================
+   FORM
+==================================== */
+
+.contact-form{
+  width:100%;
+
+  display:flex;
+  flex-direction:column;
+
+  gap:18px;
+}
+
+/* NAME ROW */
+
+.name-row{
+  display:flex;
+  gap:20px;
+}
+
+.name-row input{
+  flex:1;
+}
+
+/* INPUTS */
+
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+
+  padding:18px;
+
+  border:none;
+  outline:none;
+
+  border-radius:14px;
+
+  background:#fff;
+
+  font-size:18px;
+  color:#333;
+
+  box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* TEXTAREA */
+
+.contact-form textarea{
+  height:170px;
+  resize:none;
+}
+
+/* BUTTON */
+
+.contact-form button{
+  width:230px;
+
+  padding:18px;
+
+  border:none;
+  border-radius:14px;
+
+  background:#5b3fff;
+  color:#fff;
+
+  font-size:20px;
+  font-weight:bold;
+
+  cursor:pointer;
+
+  transition:0.3s ease;
+}
+
+.contact-form button:hover{
+  background:#4127d0;
+  transform:translateY(-2px);
+}
+
+/* ====================================
+   RIGHT SIDE
+==================================== */
+
+.contact-right{
+  width:280px;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  flex-shrink:0;
+}
+
+/* IMAGE */
+
+.contact-right img{
+  width:100%;
+  max-width:280px;
+
+  height:auto;
+
+  object-fit:contain;
+
+  border-radius:20px;
+
+  box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* ====================================
+   LARGE TABLET
+==================================== */
+
+@media(max-width:1200px){
+
+  .contact-page{
+    padding:25px 35px;
+    gap:30px;
+  }
+
+  .contact-left h1{
+    font-size:52px;
+  }
+
+  .contact-right{
+    width:240px;
+  }
+
+  .contact-right img{
+    max-width:240px;
+  }
+
+  .contact-form textarea{
+    height:140px;
+  }
+}
+
+/* ====================================
+   TABLET
+==================================== */
+
+@media(max-width:992px){
+
+  .contact-page{
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    padding:30px 25px;
+  }
+
+  .contact-left,
+  .contact-right{
+    width:100%;
+  }
+
+  .contact-left h1{
+    font-size:48px;
+    text-align:left;
+  }
+
+  .contact-right{
+    justify-content:center;
+    margin-top:10px;
+  }
+
+  .contact-right img{
+    max-width:240px;
+  }
+}
+
+/* ====================================
+   MOBILE
+==================================== */
+
+@media(max-width:768px){
+
+  .contact-page{
+    padding:25px 18px;
+    gap:25px;
+  }
+
+  .contact-left h1{
+    font-size:40px;
+    margin-bottom:20px;
+  }
+
+  /* STACK INPUTS */
+
+  .name-row{
+    flex-direction:column;
+    gap:18px;
+  }
+
+  .contact-form{
+    gap:16px;
+  }
+
+  .contact-form input,
+  .contact-form textarea{
+    font-size:16px;
+    padding:16px;
+  }
+
+  .contact-form textarea{
+    height:130px;
+  }
+
+  .contact-form button{
+    width:100%;
+    font-size:18px;
+    padding:16px;
+  }
+
+  .contact-right img{
+    max-width:210px;
+  }
+}
+
+/* ====================================
+   SMALL MOBILE
+==================================== */
+
+@media(max-width:480px){
+
+  .contact-page{
+    padding:20px 15px;
+  }
+
+  .contact-left h1{
+    font-size:34px;
+  }
+
+  .contact-form input,
+  .contact-form textarea{
+    padding:14px;
+    font-size:15px;
+  }
+
+  .contact-form textarea{
+    height:120px;
+  }
+
+  .contact-form button{
+    font-size:17px;
+    padding:15px;
+  }
+
+  .contact-right img{
+    max-width:180px;
+    border-radius:16px;
+  }
+}

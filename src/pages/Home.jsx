@@ -13,7 +13,7 @@ function Home( { setOpenModal }) {
         <div className="hero-text">
 
           <h1>
-            Welcome To Millennium Book 
+            Welcome To Millennium Book Store
           </h1>
 
           <p>
